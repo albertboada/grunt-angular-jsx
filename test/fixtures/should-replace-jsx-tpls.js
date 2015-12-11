@@ -1,0 +1,1 @@
+var x = {template: <div>{{a}}</div>};
