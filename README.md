@@ -4,26 +4,21 @@ Grunt plugin for [angular-jsx](https://www.github.com/thesam/angular-jsx).
 ## Installation
 
 ```
-npm install grunt-angular-jsx
+$> npm install grunt-angular-jsx
 ```
 
 ## Usage
 
-```
+```js
 module.exports = function(grunt) {
 
   grunt.initConfig({
 
     angular_jsx: {
       default: {
-        options: {
-        },
         files: [{
-          expand: true
-          cwd: 'test/fixtures/',
-          src: ['*.js'],
-          dest: 'tmp/',
-          flatten: true,
+          src: ['src/*.js'],
+          dest: 'build/'
         }]
       }
     }
